@@ -57,7 +57,7 @@ export default function Home() {
           </div>
           <div className="post">
             {posts
-              .sort((a, b) => Date(a.created_at) - Date(b.created_at))
+              // .sort((a, b) => Date(a.created_at) - Date(b.created_at))
               .map((data) => (
                 <div>
                   <Post {...data} />

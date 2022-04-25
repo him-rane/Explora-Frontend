@@ -158,9 +158,7 @@ const Profile = (props) => {
                   </div>
                   <div className="col-4">
                     <div className="stateOuterBox">
-                      <div className="innerBoxNo">
-                        {profile.travelHistory.length}
-                      </div>
+                      <div className="innerBoxNo">{profile.badges.length}</div>
                       <div className="innerBoxText">Places Visited</div>
                     </div>
                   </div>

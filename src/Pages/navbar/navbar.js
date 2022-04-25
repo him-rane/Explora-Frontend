@@ -11,6 +11,7 @@ import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
 import HomeIcon from "@mui/icons-material/Home";
 import NearMeIcon from "@mui/icons-material/NearMe";
 import PsychologyIcon from "@mui/icons-material/Psychology";
+import LandscapeIcon from "@mui/icons-material/Landscape";
 
 import { styled, useTheme } from "@mui/material/styles";
 import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
@@ -158,12 +159,19 @@ export default function ButtonAppBar() {
       setOpen(false);
     } else if (text == "About Us") {
       navigate("/aboutus");
+      setOpen(false);
     } else if (text == "Suggest Friends") {
       navigate("/suggestfriends");
+      setOpen(false);
     } else if (text == "My Buddies") {
       navigate("/mybuddies");
+      setOpen(false);
     } else if (text == "Personality Quiz") {
       navigate("/personalityquiz");
+      setOpen(false);
+    } else if (text == "Suggest Places") {
+      navigate("/suggestplaces");
+      setOpen(false);
     }
   }
 
@@ -223,6 +231,7 @@ export default function ButtonAppBar() {
                   "Find Friends",
                   "Suggest Friends",
                   "Personality Quiz",
+                  "Suggest Places",
                   "Logout",
                 ].map((text, index) => (
                   <ListItem
@@ -268,6 +277,9 @@ export default function ButtonAppBar() {
                       )}
                       {text == "Personality Quiz" && (
                         <AssignmentIcon style={{ fontSize: "20px" }} />
+                      )}
+                      {text == "Suggest Places" && (
+                        <LandscapeIcon style={{ fontSize: "20px" }} />
                       )}
                     </ListItemIcon>
                     {text == "Logout" && (

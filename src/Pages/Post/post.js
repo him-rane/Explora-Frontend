@@ -21,6 +21,7 @@ import SendIcon from "@mui/icons-material/Send";
 import ShowComment from "../comment/showComment";
 import jwt_decode from "jwt-decode";
 import { toast } from "react-toastify";
+import { Navigate } from "react-router-dom";
 //darksalmon
 
 const ExpandMore = styled((props) => {
@@ -117,6 +118,12 @@ export default function Post(props) {
       }}
     >
       <CardHeader
+        // onPress={() => {
+        //   console.log("onclick");
+        // }}
+        // onClick={(e) =>
+        //   Navigate(`{http://localhost:3001/api/profile/${props._id}}`)
+        // }
         avatar={
           <Avatar
             aria-label="recipe"
@@ -143,7 +150,7 @@ export default function Post(props) {
           margin: "auto",
           borderRadius: "10px",
           height: "inherit",
-          width: "600px",
+          width: "800px",
         }}
         src={props.photoUrl}
       />
